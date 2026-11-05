@@ -1,0 +1,94 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "apple-tv-remote",
+  "title": "Apple TV Remote",
+  "description": "Control your Apple TV from Raycast with a native remote. No extra software needed.",
+  "icon": "command-icon.png",
+  "author": "YOUR_RAYCAST_USERNAME",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "System",
+    "Media"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "remote",
+      "title": "Remote",
+      "subtitle": "Apple TV",
+      "description": "Full Apple TV remote with arrow-key navigation.",
+      "mode": "view"
+    },
+    {
+      "name": "setup",
+      "title": "Pair Apple TV",
+      "subtitle": "Apple TV",
+      "description": "Find your Apple TV and pair it (one time).",
+      "mode": "view"
+    },
+    {
+      "name": "play-pause",
+      "title": "Toggle Playback",
+      "subtitle": "Apple TV",
+      "description": "Toggle playback on your Apple TV.",
+      "mode": "no-view"
+    },
+    {
+      "name": "home",
+      "title": "Go Home",
+      "subtitle": "Apple TV",
+      "description": "Press the TV/Home button.",
+      "mode": "no-view"
+    },
+    {
+      "name": "volume-up",
+      "title": "Volume Up",
+      "subtitle": "Apple TV",
+      "description": "Raise the volume.",
+      "mode": "no-view"
+    },
+    {
+      "name": "volume-down",
+      "title": "Volume Down",
+      "subtitle": "Apple TV",
+      "description": "Lower the volume.",
+      "mode": "no-view"
+    },
+    {
+      "name": "power-off",
+      "title": "Turn Off",
+      "subtitle": "Apple TV",
+      "description": "Put the Apple TV to sleep.",
+      "mode": "no-view"
+    },
+    {
+      "name": "power-on",
+      "title": "Turn On",
+      "subtitle": "Apple TV",
+      "description": "Wake the Apple TV.",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.93.0",
+    "@raycast/utils": "^1.19.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
